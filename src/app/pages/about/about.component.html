@@ -1,0 +1,47 @@
+<!-- hero header -->
+<div class="flex flex-row w-full h-72 bg-gray-100 justify-between px-10 py-6">
+  <div class="w-3/6">
+    <h1 class="text-4xl font-bold pb-2">Edward Zabala</h1>
+    <h3 class="text-xl font-light py-1">Senior Software Enginer</h3>
+    <p class="text-sm py-2">
+      I'm software engineer specialiced in frontend and backend development for
+      complex scalable web apps. I write about software development on
+      <a class="text-primary cursor-pointer">my blog</a> . Want to know how i
+      may help your project? Check on my project
+      <a class="text-primary cursor-pointer">portafolio</a> and
+      <a class="text-primary cursor-pointer">online resume</a>
+    </p>
+
+    <br />
+    <app-btn text="View portafolio" size="small" color="primary"></app-btn>
+    <app-btn text="View resume" size="small" color="secondary"></app-btn>
+  </div>
+  <img
+    class="rounded-sm h-60 w-80 object-cover mx-auto pr-4"
+    src="/assets/black.png"
+    alt="Extra large avatar"
+  />
+</div>
+
+<!-- skills -->
+
+<div class="px-10 py-6">
+  <h1 class="text-3xl font-bold border-l-primary border-l-4 px-4">What I do</h1>
+  <p class="text-sm py-3">
+    I have a more than 10 years experience building software for clients all
+    over the word. Below is a quick overview of my main technical skills sets
+    and technologies. Want to find out more about my experiencie? Check out
+    <a class="text-primary cursor-pointer">my resume</a> and
+    <a class="text-primary cursor-pointer">project portafolio.</a>
+  </p>
+
+  <div class="flex flex-wrap justify-around py-8">
+    <div *ngFor="let skill of skills" class="basis-1/4 pr-4">
+      <app-card
+        [icons]="skill.icons"
+        [title]="skill.title"
+        [description]="skill.description"
+      ></app-card>
+    </div>
+  </div>
+</div>

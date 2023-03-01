@@ -1,0 +1,11 @@
+<div class="w-full py-2 px-1">
+  <fa-icon
+    *ngFor="let icon of icons"
+    [icon]="icon"
+    class="text-2xl text-primary"
+  ></fa-icon>
+  <div>
+    <p class="text-md font-semibold">{{ title }}</p>
+    <p class="text-xs font-light my-1">{{ description }}</p>
+  </div>
+</div>
